@@ -7,4 +7,5 @@ export default defineConfig({
   optimizeDeps: {
     include: ["react-responsive-carousel"],
   },
+  base: "/", // Set the base path for production
 });
