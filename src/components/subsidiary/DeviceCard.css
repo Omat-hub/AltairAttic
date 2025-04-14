@@ -1,0 +1,27 @@
+.device-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    transition: transform 0.3s;
+  }
+  
+  .device-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .device-image {
+    max-width: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .device-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--secondaryText);
+    text-align: center;
+  }
+  

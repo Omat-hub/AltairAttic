@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Homeowners & Real Estate Developers",
+    "detail": "Looking for smart home automation solutions to enhance security, convenience, and energy efficiency.",
+    "image": "/S1.jpg",
+    "additionalInfo": [
+      "Comprehensive security systems",
+      "Energy-efficient lighting",
+      "Smart climate control"
+    ]
+  },
+  {
+    "name": "Businesses and Enterprises",
+    "detail": "In need of custom software development, IoT solutions, and embedded systems to optimize operations and innovate their product offerings.",
+    "image": "/S2.jpg",
+    "additionalInfo": [
+      "Tailored software solutions",
+      "Advanced IoT integration",
+      "Embedded systems design"
+    ]
+  },
+  {
+    "name": "Tech Enthusiasts and Professionals",
+    "detail": "Seeking to acquire new IT skills and stay updated with the latest technological advancements.",
+    "image": "/S3.jpg",
+    "additionalInfo": [
+      "Online courses",
+      "Workshops and webinars",
+      "Certification programs"
+    ]
+  },
+  {
+    "name": "General Consumers",
+    "detail": "Interested in high-quality merchandise that complements their tech-savvy lifestyle.",
+    "image": "/S4.jpg",
+    "additionalInfo": [
+      "Tech gadgets",
+      "Smart home devices",
+      "Wearable technology"
+    ]
+  }
+]
