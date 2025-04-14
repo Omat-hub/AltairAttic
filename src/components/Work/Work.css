@@ -15,31 +15,20 @@
   border-radius: 10px;
   flex: 1 1 0%;
   height: auto;
-  transition: background 0.3s ease-in-out; /* Only transition background to avoid size changes */
+  transition: all 0.3s ease-in-out;
   justify-content: center;
   align-items: start;
   position: relative;
   margin-bottom: 1rem;
-  box-sizing: border-box; /* Ensures padding and border are included in the element's width and height */
+}
+.w-card {
+  box-sizing: border-box;
   width: 100%;
 }
 
 .w-card > img {
   width: 100%;
   border-radius: 5px;
-}
-
-/* Ensure images and other elements inside .w-card do not cause size changes */
-.w-card img {
-  display: block; /* Prevents inline spacing issues */
-  max-width: 100%; /* Ensures the image does not exceed the card's width */
-  height: auto; /* Maintains aspect ratio */
-}
-
-.w-card > * {
-  margin: 0; /* Removes any default margins */
-  padding: 0; /* Removes any default padding */
-  box-sizing: border-box; /* Ensures consistent sizing */
 }
 
 .w-card > :nth-child(2) {
@@ -51,12 +40,15 @@
 }
 
 .w-card:hover {
+  transform: scale(1.01);
   cursor: pointer;
   background: linear-gradient(
     180deg,
     rgba(0, 119, 255, 0) 0%,
     rgba(136, 160, 255, 0.46) 217.91%
   );
+  box-shadow: 0px 72px 49px -51px rgba(17, 54, 202, 0.21);
+  /* margin-bottom: 5rem; */
 }
 
 /* Ensure dropdown visibility */
