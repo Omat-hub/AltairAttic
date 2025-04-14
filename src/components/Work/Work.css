@@ -40,7 +40,7 @@
 }
 
 .w-card:hover {
-  transform: scale(1.01);
+  transform: scale(1.25);
   cursor: pointer;
   background: linear-gradient(
     180deg,
@@ -48,7 +48,7 @@
     rgba(136, 160, 255, 0.46) 217.91%
   );
   box-shadow: 0px 72px 49px -51px rgba(17, 54, 202, 0.21);
-  /* margin-bottom: 5rem; */
+  margin-bottom: 5rem;
 }
 
 /* Ensure dropdown visibility */
