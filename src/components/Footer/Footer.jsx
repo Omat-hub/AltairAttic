@@ -1,7 +1,13 @@
 import React from "react";
 import "./Footer.css";
 import logo from "/fLogo.png";
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaPhoneAlt,
+  FaEnvelope,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -49,6 +55,16 @@ const Footer = () => {
             3rd floor, Opposite Cathedral of St. Peter Ang. Sec. Sch, Along Oba
             Ademola Maternity Hospital, Ake, Abeokuta.
           </address>
+          <div className="footer-contact">
+            <div className="footer-call">
+              <FaPhoneAlt className="footer-call-icon" />
+              <span>+2347077195098</span>
+            </div>
+            <div className="footer-email">
+              <FaEnvelope className="footer-email-icon" />
+              <span>hello@altairattic</span>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

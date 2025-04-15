@@ -16,7 +16,7 @@ const data = [
     name: "Software Development",
     url: "/software-development",
     define:
-      "Our software development team delivers tailored applications to meet your specific requirements.",
+      "Our software development team delivers tailored enterprise-grade applications to meet your specific requirements efficiently.",
     image: img2,
     description:
       "Customizable ERP, mobile business apps, web applications, POS systems, CRM, logistics software, educational software, financial software.",

@@ -1,13 +1,13 @@
 .footer-wrapper {
   padding: 3rem 1rem;
   background-color: #e6f5ff;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .footer-container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: flex-end;
   max-width: 1280px;
   margin: auto;
   padding: 0 1rem;
@@ -30,16 +30,18 @@
 }
 
 .footer-right {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
   max-width: 500px;
   text-align: left;
+  justify-content: space-between;
 }
 
 .footer-title {
   color: #333333;
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
-  font-family: 'Arial Black', sans-serif;
+  font-family: "Arial Black", sans-serif;
 }
 
 .footer-menu {
@@ -76,14 +78,59 @@
   color: #0091f8;
 }
 
+/* Ensure call and email sections are displayed beside each other */
+.footer-call,
+.footer-email {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  color: #333333;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.footer-call-icon {
+  font-size: 1.5rem;
+  color: #007bff;
+}
+
+.footer-call-icon:hover {
+  color: #0056b3;
+}
+
+.footer-email-icon {
+  font-size: 1.5rem;
+  color: #007bff;
+}
+
+.footer-email-icon:hover {
+  color: #0056b3;
+}
+
+/* Adjust call and email icon sizes to match social icons */
+.footer-call-icon,
+.footer-email-icon {
+  font-size: 1.5rem; /* Match size with social icons */
+}
+
+.footer-contact {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 2rem;
   }
 
-  .footer-left, .footer-right {
+  .footer-left,
+  .footer-right {
     max-width: 100%;
     text-align: center; /* Center align text on mobile */
   }
@@ -96,5 +143,10 @@
 
   .footer-social {
     justify-content: center; /* Center align social icons on mobile */
+  }
+  .footer-contact {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
   }
 }

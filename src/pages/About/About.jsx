@@ -6,8 +6,6 @@ import Team from "./Team";
 import ExSer from "../../components/Work/Work";
 // import Services from "../../components/Services/Services";
 
-
-
 const About = () => {
   return (
     <section id="about" className="about-wrapper">
@@ -44,7 +42,7 @@ const About = () => {
       </Helmet>
       <div className="paddings innerWidth flexCenter about-container">
         <div className="about-left flexColStart">
-          <span className=" primary-Text ">About Us</span>
+          <span className=" primary-Text">ABOUT US</span>
 
           <span className="secondary-Text">
             Altair Attic Limited is at the forefront of technological
