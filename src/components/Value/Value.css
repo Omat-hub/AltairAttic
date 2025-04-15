@@ -1,28 +1,38 @@
 .v-container .image-container {
   border: 8px solid rgb(232 232 232 / 93%);
 }
+
 .v-container > div {
   flex: 1;
 }
+
 .v-right {
   gap: 0.5rem;
 }
+
 .accordion {
   margin-top: 2rem;
   border: none;
 }
+
 .accordionItem {
   background: white;
   border: 0.8px solid rgba(128, 128, 128, 0.143);
   border-radius: 8px;
   overflow: hidden;
   margin-bottom: 20px;
+  transition: box-shadow 0.3s ease; /* Smooth transition for shadow */
 }
 
 .accordionItem.expanded {
   box-shadow: var(--shadow);
   border-radius: 6px;
 }
+
+.accordionItem.collapsed {
+  box-shadow: none; /* Optional: Ensure no shadow when collapsed */
+}
+
 .accordionButton {
   background: white;
   padding: 1rem;
@@ -52,12 +62,26 @@
   background: #eeeeff;
   border-radius: 5px;
 }
+
 .icon svg {
   fill: var(--blue);
 }
 
 .accordionButton .primaryText {
   font-size: 1.1rem;
+}
+
+/* Dropdown icon animation */
+.dropdown-icon {
+  transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Elastic easing for bounce effect */
+}
+
+.dropdown-icon-collapsed {
+  transform: rotate(0deg); /* Down when collapsed */
+}
+
+.dropdown-icon-expanded {
+  transform: rotate(180deg); /* Up when expanded */
 }
 
 @media (max-width: 1024px) {
@@ -69,5 +93,9 @@
 @media (max-width: 768px) {
   .accordionButton .primaryText {
     font-size: 0.8rem;
+  }
+
+  .dropdown-icon {
+    font-size: 0.9rem; /* Slightly smaller icon on mobile */
   }
 }

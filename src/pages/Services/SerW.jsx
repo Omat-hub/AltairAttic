@@ -49,9 +49,15 @@ const SerW = () => {
     (service) => service.url !== currentUrl
   );
 
+  // Dynamically set the hero image based on the current service
+  const heroImage = service.image || "/home-auto2.png"; // Fallback to a default image if none is found
+
   return (
-    <div className="container">
-      <div className="breadcumb-area">
+    <div className="service-container">
+      <div
+        className="breadcumb-area"
+        style={{ backgroundImage: `url(${heroImage})` }}
+      >
         <div className="header">
           <div className="row">
             <div className="col-lg-12">
@@ -71,9 +77,9 @@ const SerW = () => {
       </div>
       <div className="serPage">
         <div className="s-right">
-          <div className="s-image">
+          {/* <div className="s-image">
             <img src={image} alt={name} style={{ borderRadius: "30px" }} />
-          </div>
+          </div> */}
           <div className="s-dat">
             <div className="s-name s-primaryText">
               Best Solutions for {name}
@@ -144,7 +150,7 @@ const SerW = () => {
               </div>
               <div className="contact-item">
                 <EmailIcon className="contact-icon" />
-                <h3>info@example.com</h3>
+                <h3>hello@altairattic.com</h3>
               </div>
             </div>
           </div>

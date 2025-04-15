@@ -1,5 +1,5 @@
 /* General Styles */
-.container {
+.service-container {
   top: 100px;
 }
 .header {
@@ -7,16 +7,31 @@
   /* margin-right: auto; */
   /* margin-left: auto; */
 }
-
 /* Breadcumb Area */
 .breadcumb-area {
   background: url("/home-auto2.png");
-  padding: 170px 0 170px;
+  padding: 100px 0 100px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;
-  width: 98vw;
+  width: 98.8vw;
+}
+
+.breadcumb-area::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+  z-index: 1;
+}
+
+.breadcumb-content {
+  position: relative;
+  z-index: 2; /* Ensure content is above the overlay */
 }
 
 .breadcumb-content {
@@ -66,7 +81,7 @@
   display: flex;
   justify-content: center;
   /* padding: 90px 0 121px; */
-  margin-block: 120px;
+  margin-block: 60px;
   margin-inline: 98px;
 }
 

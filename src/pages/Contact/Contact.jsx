@@ -99,7 +99,7 @@ const Contact = () => {
         <div className="contact-details">
           <h2>Contact Us</h2>
           <p>
-            <i className="fas fa-envelope"></i> contact@altairattic.com
+            <i className="fas fa-envelope"></i> hello@altairattic.com
           </p>
           <p>
             <i className="fas fa-phone"></i> +2347077195098
