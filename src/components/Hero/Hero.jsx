@@ -15,7 +15,7 @@ const Hero = () => {
     if (isPlaying) {
       const interval = setInterval(() => {
         setCurrentSlide((prev) => (prev + 1) % slides.length);
-      }, 5000);
+      }, 2000);
 
       return () => clearInterval(interval); // Cleanup on component unmount
     }
@@ -29,7 +29,7 @@ const Hero = () => {
     <section className="relative w-full h-[60vh] md:h-[80vh] flexCenter overflow-hidden">
       {/*  <Header /> */}
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black opacity-60 z-10"></div>
+      <div className="absolute inset-0 bg-black opacity-70 z-10"></div>
 
       {/* Background Image Slider */}
       <AnimatePresence>

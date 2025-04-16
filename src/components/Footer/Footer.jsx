@@ -62,7 +62,7 @@ const Footer = () => {
             </div>
             <div className="footer-email">
               <FaEnvelope className="footer-email-icon" />
-              <span>hello@altairattic</span>
+              <span>hello@altair-attic.com</span>
             </div>
           </div>
         </div>

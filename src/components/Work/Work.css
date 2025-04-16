@@ -140,7 +140,7 @@
   transform: translateX(-50%);
   width: 100%;
   max-width: 350px;
-  z-index: 100;
+  z-index: 30;
 }
 
 .dropdown-card {
@@ -157,17 +157,28 @@
   margin-bottom: 1rem;
 }
 
+/* Updated the Learn More link to look like a button */
 .learn-more-link {
   display: inline-block;
   font-size: 0.95rem;
-  color: #6b48ff;
-  text-decoration: underline;
+  color: #ffffff;
+  background: linear-gradient(90deg, #3f1ed2 0%, #0095eb 100%);
+  text-decoration: none;
   font-weight: 500;
-  transition: color 0.3s ease;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center;
 }
 
 .learn-more-link:hover {
-  color: #00ddeb;
+  background: linear-gradient(90deg, #0095eb 0%, #3f1ed2 100%);
+  transform: scale(1.05);
+}
+
+.learn-more-link:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(107, 72, 255, 0.3);
 }
 
 /* Responsive adjustments */

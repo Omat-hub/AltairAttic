@@ -32,7 +32,7 @@ const Header = () => {
   }, [isMobileMenuOpen]);
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-gray-500 backdrop-blur border-b border-gray-300 shadow-md">
+    <header className="sticky top-0 z-50 w-full bg-[#010916] backdrop-blur border-b border-gray-300 shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -125,7 +125,7 @@ const Header = () => {
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: -20, opacity: 0 }}
             transition={{ duration: 0.25 }}
-            className="md:hidden absolute top-16 inset-x-0 bg-gray-500 backdrop-blur-md shadow-xl p-4 space-y-3 z-40"
+            className="md:hidden absolute top-16 inset-x-0 bg-[#010916] backdrop-blur-md shadow-xl p-4 space-y-3 z-40"
           >
             {navLinks.map((link) => {
               if (link.type === "route") {
@@ -136,8 +136,8 @@ const Header = () => {
                     onClick={() => setIsMobileMenuOpen(false)}
                     className={`block text-lg font-medium px-4 py-2 rounded-lg transition ${
                       isActive(link.href)
-                        ? "text-blue-500 bg-gray-500"
-                        : "text-white hover:bg-gray-500"
+                        ? "text-blue-500 bg-[#080e18]"
+                        : "text-white hover:bg-[#080e18]"
                     }`}
                   >
                     {link.name}

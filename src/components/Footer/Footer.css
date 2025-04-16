@@ -129,6 +129,11 @@
     gap: 2rem;
   }
 
+  .footer-logo {
+    width: 100px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
   .footer-left,
   .footer-right {
     max-width: 100%;

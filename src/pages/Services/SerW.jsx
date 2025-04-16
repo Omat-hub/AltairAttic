@@ -150,7 +150,7 @@ const SerW = () => {
               </div>
               <div className="contact-item">
                 <EmailIcon className="contact-icon" />
-                <h3>hello@altairattic.com</h3>
+                <h3>hello@altair-attic.com</h3>
               </div>
             </div>
           </div>
