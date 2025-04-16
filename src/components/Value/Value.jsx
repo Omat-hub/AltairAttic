@@ -28,7 +28,7 @@ const Value = () => {
           <span className="primaryText">Value We Give to You</span>
 
           <span className="secondaryText">
-            We always ready to help by providing the best services for you.
+            We are always ready to help by providing the best services for you.
           </span>
 
           <Accordion
